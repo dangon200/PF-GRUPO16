@@ -1,0 +1,9 @@
+.cardCategoria_container {
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 15em;
+    height: 15em;
+    margin: 1.2em 1em;
+    /* padding: 1em; */
+    border-radius: 21px;
+
+}
