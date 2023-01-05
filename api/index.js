@@ -17,26 +17,12 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js')
-require('dotenv').config()
-const getGenres = require('./src/controllers/getGenres.js')
-const getPlatforms = require('./src/controllers/getPlatforms.js')
-const { conn } = require('./src/db.js')
-import {PORT, API_KEY} from './config.js'
+const server = require('./src/app.js');
+const { conn } = require('./src/db.js');
 
 // Syncing all the models at once.
-async function main() {
-    try {
-        conn.sync({}).then(() => {
-            server.listen(PORT, () => {
-                console.log(`%s listening at ${PORT}`) // eslint-disable-line no-console
-            })
-        })
-        await getGenres(API_KEY)
-        await getPlatforms(API_KEY)
-    } catch (error) {
-        console.error('unable to connect', error)
-    }
-}
-
-main()
+conn.sync({ force: false }).then(() => {
+  server.listen(3001, () => {
+    console.log('%s listening at 3001'); // eslint-disable-line no-console
+  });
+});
