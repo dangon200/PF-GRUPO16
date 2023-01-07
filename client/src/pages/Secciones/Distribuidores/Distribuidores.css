@@ -1,0 +1,43 @@
+.home_dist_container {
+    background-color: #3399CC;
+    width: 100%;
+    height: 100vh;
+    padding-top: 8em;
+}
+
+.home_dist_container-info {
+    background-color: #4d9f76; 
+    width: 75%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_dist_container-info--title {
+    background-color: rgba(245, 245, 220, 0.379);
+    width: 100%;
+    height: 30%;
+    padding-top: 6em;
+}
+
+.home_dist_container-info--title h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.4em;  
+}
+
+.home_dist_container-info--company {
+    background-color: rgba(111, 133, 189, 0.379);
+    width: 100%;
+    height: 70%;
+    padding-top: 6em;
+}
+
+.company-cards {
+    background-color: rgba(119, 189, 111, 0.379);
+    width: 85%;
+    height: 17em;
+    margin: 0 auto;
+}
