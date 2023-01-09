@@ -29,12 +29,12 @@ const Soporte = () => {
         let expRegComents = /^.{1,255}$/;
 
         if(!input.name.trim()){
-            error.name ="El campoo 'Nombre' es requerido";
+            error.name ="El campo 'Nombre' es requerido";
         }else if(!expRegName.test(input.name.trim())){
             error.name = "Solo se acepta letras"
         }
         if(!input.email.trim()){
-            error.email ="El campoo 'Email' es requerido";
+            error.email ="El campo 'Email' es requerido";
         }else if(!expRegEmail.test(input.email.trim())){
             error.email = "Email invalido"
         }
