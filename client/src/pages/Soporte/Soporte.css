@@ -1,0 +1,58 @@
+
+.soporte-vista{
+    background-color: var(--color-blue);
+    padding: 50px;
+}
+
+.form-soporte {
+    background: rgba(255,255,255,0.2);
+    width: 600px;
+    background: rgba(255,255,255,0.2);
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+
+    padding: 50px;
+}
+
+.titulo {
+    
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.titulo h1 {
+    
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 0px 60px 0px 60px;
+}
+
+.input-text{
+    width: 100%;
+
+    outline: 0;
+    padding: 9px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 15px;
+}
+
+.botton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    margin: 16px 0;
+    font-size: 15px;
+}
